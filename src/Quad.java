@@ -1,4 +1,4 @@
-public class Quad extends Shape implements SquareCounter{
+public class Quad extends Shape implements SquareCounter {
 
     private double side;
 
@@ -9,15 +9,17 @@ public class Quad extends Shape implements SquareCounter{
     }
 
 
-
-
-
     public void setSide(double side) {
         this.side = side;
     }
 
     @Override
     public double countSquare() {
-        return side*side;
+        return side * side;
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
     }
 }

@@ -1,16 +1,14 @@
-public  class Shape {
-    private String name;
+public abstract class Shape {
+    public String name;
 
 
-    Shape(String name){
+    Shape(String name) {
         this.name = name;
     }
 
-    public String getName() {
-        return this.name;
-    }
+    abstract public String getName();
 
-    public void printName(){
-        System.out.println("Shape name = " +this.name);
+    public void printName() {
+        System.out.println("Shape name = " + this.name);
     }
 }

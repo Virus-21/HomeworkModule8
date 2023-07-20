@@ -1,4 +1,4 @@
-public class Ellipse extends Shape implements SquareCounter{
+public class Ellipse extends Shape implements SquareCounter {
     private double bigRadius;
     private double smallRadius;
 
@@ -11,5 +11,10 @@ public class Ellipse extends Shape implements SquareCounter{
     @Override
     public double countSquare() {
         return Math.PI * smallRadius * bigRadius;
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
     }
 }
